@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+    <!-- Main Card -->
+    <div class="bg-white rounded-xl shadow-lg w-[900px] grid grid-cols-2 overflow-hidden">
+
+        <!-- Left Section -->
+        <div class="bg-blue-600 text-white flex flex-col justify-center items-center p-10">
+            <h2 class="text-2xl font-bold mb-4">New Scheduling</h2>
+            <p class="text-center text-sm mb-6">
+                New scheduling and routing options
+                for your business growth.
+            </p>
+
+            <div class="bg-white text-gray-800 rounded-lg p-4 w-64 shadow">
+                <h4 class="font-semibold text-sm">Feature Update</h4>
+                <p class="text-xs text-gray-600 mt-1">
+                    Better control & faster access
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="p-10">
+            <h2 class="text-2xl font-bold mb-2 text-gray-800">Hello Again!</h2>
+            <p class="text-sm text-gray-500 mb-6">
+                Welcome back, please login
+            </p>
+
+            <form class="space-y-4">
+
+                <!-- Email -->
+                <div>
+                    <label class="text-sm text-gray-600">Email</label>
+                    <input type="email" placeholder="Enter email"
+                        class="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <!-- Password -->
+                <div>
+                    <label class="text-sm text-gray-600">Password</label>
+                    <input type="password" placeholder="Enter password"
+                        class="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <!-- Remember -->
+                <div class="flex justify-between text-sm text-gray-500">
+                    <label>
+                        <input type="checkbox" class="mr-1"> Remember me
+                    </label>
+                    <a href="#" class="text-blue-500 hover:underline">Forgot password?</a>
+                </div>
+
+                <!-- Button -->
+                <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                    Login
+                </button>
+
+                <!-- Signup -->
+                <p class="text-center text-sm text-gray-500 mt-4">
+                    Don’t have an account?
+                    <a href="#" class="text-blue-600 hover:underline">Sign Up</a>
+                </p>
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
