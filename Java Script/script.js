@@ -73,15 +73,6 @@ while (i <= 5) {
     i++;
 }
 
-//prompt msg
-let gamenum = 25;
-let usernum = prompt("Guess the number :");
-
-while (usernum != gamenum) {
-    usernum = prompt("you entered wrong number , guess again:");
-
-}
-console.log("Congratulations! You guessed the  right number .");
 
 //for of loop
 let items = [250, 300, 350, 400, 450];
@@ -104,4 +95,41 @@ const arrowmult = (a, b) => {
     console.log(a * b);
 }
 
+// concating
+let cartoons = ["chhota bheem", "Doremon", "Shinchain"];
+let Movies = ["Krish", "Jholmaal"];
 
+let Tvshow = cartoons.concat(Movies);
+console.log(Tvshow);
+
+//splice method
+let arr = [1, 2, 3, 4, 5, 6, 7];
+
+arr.splice(2, 2, 201, 202);
+console.log(arr);
+
+arr.splice(2, 0, 301);
+console.log(arr);
+
+arr.splice(3, 1);
+console.log(arr);
+
+arr.splice(3, 1, 201);
+console.log(arr);
+
+//filter method
+let nums = [11, 23, 35, 48, 59, 62];
+
+let evennums = nums.filter((val) => {
+    return val % 2 === 0;
+});
+
+console.log(evennums);
+
+//for each
+let num = [2, 3, 5, 6, 7];
+
+num.forEach((num) => {
+    console.log(num * num);
+
+});

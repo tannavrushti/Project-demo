@@ -1,14 +1,6 @@
-// Post Request button
-//document.addEventListener("DOMContentLoaded", function () {
-//  document.getElementById("postBtn").addEventListener("click", function () {
-//    alert("Button clicked");
-// });
-//})
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("postBtn").addEventListener("click", function () {
-        document.getElementById("msg").innerText = "Button clicked successfully";
-    });
-});
+function handleMyClick() {
+    // Your existing logic goes here
+    console.log("Button was clicked!");
+    alert("The button works!");
+    // You can add more complex logic here
+}
