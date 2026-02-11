@@ -24,7 +24,7 @@ if (marks >= 35) {
 
 //arithmatic operation demo
 let num1 = 10;
-let num2 = 5;
+let num2 = 5; 6
 console.log(num1 + num2);
 
 //assignment operation demo
@@ -133,3 +133,26 @@ num.forEach((num) => {
     console.log(num * num);
 
 });
+
+//practice work
+
+let modeBtn = document.querySelector("#mode");
+let body = document.querySelector("body");
+
+let currMode = "light";
+modeBtn.addEventListener("click", () => {
+    if (currMode === "light") {
+        currMode = "dark";
+        body.classList.remove("light");
+        body.classList.add("dark");
+    }
+    else {
+        currMode = "light";
+        body.classList.remove("dark");
+        body.classList.add("light");
+    }
+    console.log(currMode);
+
+});
+
+
