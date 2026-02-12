@@ -138,8 +138,8 @@ num.forEach((num) => {
 
 let modeBtn = document.querySelector("#mode");
 let body = document.querySelector("body");
-
 let currMode = "light";
+
 modeBtn.addEventListener("click", () => {
     if (currMode === "light") {
         currMode = "dark";
@@ -153,6 +153,47 @@ modeBtn.addEventListener("click", () => {
     }
     console.log(currMode);
 
+});
+//array - object example
+const users = [
+    { id: 1, name: 'Alice', role: 'admin' },
+    { id: 2, name: 'Bob', role: 'user' },
+    { id: 3, name: 'Charlie', role: 'user' },
+];
+const user = users
+
+console.log(user[2].role)
+//class & Object example
+class ToyotaCar {
+    start() {
+        console.log("start");
+    }
+    stop() {
+        console.log("stop");
+    }
+
+    setBrand(brand) {
+        this.brandName = brand;
+    }
+}
+let fortuner = new ToyotaCar();
+fortuner.setBrand("fortuner");
+let Kia = new ToyotaCar();
+Kia.setBrand("Kia");
+
+//callback function
+function getData(dataId, getNextData) {
+    setTimeout(() => {
+        console.log("data", dataId);
+        if (getNextData) {
+            getNextData();
+        }
+    }, 2000);
+}
+//callback hell
+getData(1, () => {
+    getData(2, () => {
+    });
 });
 
 
