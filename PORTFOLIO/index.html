@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vrushti </title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #081221, #0f172a);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .neon-text {
+            color: #38bdf8;
+            text-shadow: 0 0 10px #38bdf8;
+        }
+
+        .glow-btn {
+            background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+            box-shadow: 0 0 20px #0ea5e9;
+        }
+
+        .circle-glow {
+            box-shadow: 0 0 25px #0ea5e9;
+        }
+
+        .neon-icon {
+            box-shadow: 0 0 10px #00f5d4, 0 0 20px #00f5d4;
+            transition: 0.3s ease;
+        }
+
+        .neon-icon:hover {
+            box-shadow: 0 0 20px #00f5d4, 0 0 40px #00f5d4, 0 0 60px #00f5d4;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="text-white">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center px-12 py-6">
+        <div class="glass px-6 py-2 rounded-full text-xl font-semibold">
+            Portfolio
+        </div>
+
+        <!---Menu Button--->
+        <button id="menu-btn" class="md:hidden text-2xl"></button>
+
+        <ul id="mobile-menu" class="hidden md:flex space-x-10 text-gray-300">
+            <li class="hover:text-sky-400 cursor-pointer">Home</li>
+            <li class="hover:text-sky-400 cursor-pointer">About</li>
+            <span>
+                <a href="login.html">Login-</a>
+                <a href="signup.html">Signup</a>
+            </span>
+            <li class="hover:text-sky-400 cursor-pointer">Skills</li>
+            <li class="hover:text-sky-400 cursor-pointer">Contact</li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="grid md:grid-cols-2 items-center px-12 pt-10 relative">
+
+
+        <!-- Left Content -->
+        <div>
+            <div class=" glow-Btn glass px-8 py-6 rounded-2xl w-fit mb-6">
+                <h1 class="text-4xl md:text-5xl font-bold">
+                    Hi, I'm Vrushti Tanna
+                </h1>
+                <h2 class="typing-text text-2xl text-blue-400"></h2>
+                <p class="neon-text text-xl mt-2 font-semibold">
+                    Frontend Developer
+                </p>
+            </div>
+
+
+            <p class="text-gray-400 max-w-lg mb-6">
+                I build modern, responsive and interactive websites with
+                futuristic UI design and smooth animations.
+            </p>
+
+
+            <div class="flex space-x-4">
+                <button class="glow-btn px-6 py-3 rounded-lg font-semibold">
+                    Hire Me
+                </button>
+                <button class="border border-sky-400 px-6 py-3 rounded-lg hover:bg-sky-500 hover:text-black transition">
+                    Let's Talk
+                </button>
+            </div>
+        </div>
+
+        <!---  Right side profile + social icons-->
+        <div class="flex flex-col items-end">
+
+            <!-- profile Image -->
+            <div class="mb-6">
+                <img src="c:\Users\tanna\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\A916DB9A9070D4625087AF284CC2C7B8FF7D0FD6\transfers\2026-07\WhatsApp Image 2026-02-16 at 4.20.33 PM.jpeg"
+                    class="w-[500px] rounded-xl circle-glow opacity-120" alt="profile">
+            </div>
+
+
+            <!--Social Icons -->
+            <div class="flex space-x-6 gap-8 mt-6 items-end">
+
+                <!-- Instagram -->
+                <div class=" glow-Btn glass px-2 py-2  rounded-2xl w-fit mb-6">
+                    <a href="https://instagram.com/YOUR_USERNAME" target="_blank"
+                        class="transform hover:scale-110 transition duration-300">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"
+                            class="w-10 h-10">
+                    </a>
+                </div>
+
+                <!-- GitHub -->
+                <div class=" glow-Btn glass px-2 py-2  rounded-2xl w-fit mb-6">
+                    <a href="https://github.com/YOUR_USERNAME" target="_blank"
+                        class="transform hover:scale-110 transition duration-300">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="w-10 h-10">
+                    </a>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class=" glow-Btn glass px-2 py-2  rounded-2xl w-fit mb-6">
+                    <a href="https://www.linkedin.com/in/YOUR_USERNAME/" target="_blank"
+                        class="transform hover:scale-110 transition duration-300">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"
+                            class="w-10 h-10">
+                    </a>
+                </div>
+                <!--facebook-->
+                <div class=" glow-Btn glass px-2 py-2 rounded-2xl w-fit mb-6">
+                    <a href="https://www.facebook.com/YOUR_USERNAME" target="_blank"
+                        class="transform hover:scale-110 transition duration-300">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="facebook"
+                            class="w-10 h-10">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- About Section -->
+    <section class="mt-24 px-12 pb-20 text-center">
+
+        <div class="glass inline-block px-8 py-3 rounded-full mb-10">
+            <h2 class="text-3xl font-bold">
+                About <span class="text-sky-400">Me</span>
+            </h2>
+        </div>
+
+        <div class="flex justify-center mb-6">
+            <div class="relative">
+                <img src="c:\Users\tanna\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\A916DB9A9070D4625087AF284CC2C7B8FF7D0FD6\transfers\2026-07\WhatsApp Image 2026-02-16 at 4.08.03 PM.jpeg"
+                    class="w-48 h-48 rounded-full object-cover border-4 border-sky-400 circle-glow" alt="about image">
+            </div>
+        </div>
+
+        <div class="glass max-w-2xl mx-auto p-8 rounded-2xl">
+            <h3 class="text-2xl font-semibold mb-4">
+                Frontend Developer
+            </h3>
+
+            <p class="text-gray-400 mb-6">
+                Passionate frontend developer with strong knowledge of
+                HTML, CSS, JavaScript and modern UI frameworks.
+                I love building clean, responsive and animated websites.
+            </p>
+
+            <button class="glow-btn px-8 py-3 rounded-lg font-semibold">
+                Read More
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+
+    <!-- ================= My Journey ================= -->
+    <section class="py-16 px-6 max-w-6xl mx-auto text-center">
+
+        <div class="glass inline-block px-8 py-3 rounded-full mb-10">
+            <h1 class="text-center text-3xl font-bold ">
+                My <span class="text-sky-400">Journey</span>
+            </h1>
+        </div>
+
+
+
+        <div class="grid md:grid-cols-2 gap-12 relative z-10">
+
+            <!-- Timeline Line -->
+            <div class="hidden md:block absolute left-1/2 top-0 w-1 h-full bg-neon opacity-30"></div>
+
+            <!-- Left Card -->
+            <div class="glass p-6 rounded-xl">
+                <h2 class="text-xl font-semibold text-neon">2025 - Learning Phase</h2>
+                <p class="mt-3 text-gray-300">
+                    Started learning HTML, CSS, JavaScript and built multiple practice projects.
+                </p>
+            </div>
+
+            <!-- Right Card -->
+            <div class="glass p-6 rounded-xl">
+                <h2 class="text-xl font-semibold text-neon">2025 - Development</h2>
+                <p class="mt-3 text-gray-300">
+                    Worked on portfolio projects and improved UI/UX skills with Tailwind CSS.
+                </p>
+            </div>
+
+            <!-- Left Card -->
+            <div class="glass p-6 rounded-xl">
+                <h2 class="text-xl font-semibold text-neon">2026 - Internship</h2>
+                <p class="mt-3 text-gray-300">
+                    Gained real-world experience working on web applications.
+                </p>
+            </div>
+
+            <!-- Right Card -->
+            <div class="glass p-6 rounded-xl">
+                <h2 class="text-xl font-semibold text-neon">2026 - Professional</h2>
+                <p class="mt-3 text-gray-300">
+                    Building advanced full stack projects and client-based websites.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= My Skills ================= -->
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+
+        <div class="glass inline-block px-8 py-3 rounded-full mb-10">
+            <h1 class="text-4xl font-bold text-center">
+                My<span class="text-sky-400">Skills</span>
+            </h1>
+        </div>
+
+
+        <div class="grid md:grid-cols-2 gap-8 relative">
+
+            <!-- Skill Card -->
+            <div class="glass p-6 rounded-xl">
+                <h3>HTML</h3> <span>90%</span>
+                <div class="w-full bg-gray-700 rounded-full h-3 mt-2">
+                    <div class="bg-blue-500 h-3 rounded progress" data-width="90%"></div>
+                </div>
+
+                <h3 class="mt-4">CSS</h3> <span>85%</span>
+                <div class="w-full bg-gray-700 rounded-full h-3 mt-2">
+                    <div class="bg-blue-500 h-3 rounded progress" data-width="85%"></div>
+                </div>
+
+                <h3 class="mt-4">JavaScript</h3> <span>70%</span>
+                <div class="w-full bg-gray-700 rounded-full h-3 mt-2">
+                    <div class="bg-blue-500 h-3 rounded progress" data-width="70%"></div>
+                </div>
+            </div>
+
+            <!-- Skill Card -->
+            <div class="glass p-6 rounded-xl">
+                <h3>React</h3> <span>50%</span>
+                <div class="w-full bg-gray-700 rounded-full h-3 mt-2">
+                    <div class="bg-blue-500 h-3 rounded progress" data-width="50%"></div>
+                </div>
+
+                <h3 class="mt-4">Node.js</h3> <span>65%</span>
+                <div class="w-full bg-gray-700 rounded-full h-3 mt-2">
+                    <div class="bg-blue-500 h-3 rounded progress" data-width="65%"></div>
+                </div>
+
+                <h3 class="mt-4">UI/UX</h3> <span>85%</span>
+                <div class="w-full bg-gray-700 rounded-full h-3 mt-2">
+                    <div class="bg-blue-500 h-3 rounded progress" data-width="85%"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= Contact Me ================= -->
+    <section class="py-16 px-6 max-w-4xl mx-auto text-center">
+
+        <div class="glass inline-block px-8 py-3 rounded-full mb-10">
+            <h1 class="text-center text-4xl font-bold">
+                Contact <span class="text-sky-400">Me</span>
+            </h1>
+        </div>
+
+        <div class="glass p-8 rounded-xl">
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <input type="text" placeholder="Your Name"
+                    class="bg-transparent border border-neon p-3 rounded outline-none focus:ring-2 focus:ring-neon">
+
+                <input type="email" placeholder="Your Email"
+                    class="bg-transparent border border-neon p-3 rounded outline-none focus:ring-2 focus:ring-neon">
+            </div>
+
+            <textarea placeholder="Your Message"
+                class="w-full bg-transparent border border-neon p-3 rounded mt-6 h-32 outline-none focus:ring-2 focus:ring-neon"></textarea>
+
+            <button onclick="sendMessage()"
+                class="glow-btn px-8 py-3 rounded-sm font-semibold mt-6 bg-neon text-black font-bold py-2 rounded hover:scale-65 transition">
+                Send Message
+            </button>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-gray-400">
+        created by vrushti Tanna |2026 @ All Rights Reserved
+    </footer>
+
+    <!-----scroll button -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-blue-500 text-white px-4 py-2 rounded-full hidden">
+    </button>
+
+
+    <script src="port.js"></script>
+</body>
+
+
+</html>

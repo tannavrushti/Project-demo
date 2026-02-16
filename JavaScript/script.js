@@ -24,7 +24,7 @@ if (marks >= 35) {
 
 //arithmatic operation demo
 let num1 = 10;
-let num2 = 5; 6
+let num2 = 5;
 console.log(num1 + num2);
 
 //assignment operation demo
@@ -72,7 +72,6 @@ while (i <= 5) {
     console.log("Twins");
     i++;
 }
-
 
 //for of loop
 let items = [250, 300, 350, 400, 450];
@@ -152,8 +151,8 @@ modeBtn.addEventListener("click", () => {
         body.classList.add("light");
     }
     console.log(currMode);
-
 });
+
 //array - object example
 const users = [
     { id: 1, name: 'Alice', role: 'admin' },
@@ -161,8 +160,8 @@ const users = [
     { id: 3, name: 'Charlie', role: 'user' },
 ];
 const user = users
-
 console.log(user[2].role)
+
 //class & Object example
 class ToyotaCar {
     start() {
@@ -171,7 +170,6 @@ class ToyotaCar {
     stop() {
         console.log("stop");
     }
-
     setBrand(brand) {
         this.brandName = brand;
     }
@@ -190,10 +188,40 @@ function getData(dataId, getNextData) {
         }
     }, 2000);
 }
-//callback hell
-getData(1, () => {
-    getData(2, () => {
-    });
-});
+// //callback hell
+// getData(1, () => {
+//     console.log("getting data2...");
+//     getData(2, () => {
+//         console.log("getting data3..");
+//         getData(3, () => {
+//         });
+
+//     });
+// });
+
+// //promise Chain
+// console.log("getting data1...");
+// getData(1)
+//     .then((res) => {
+//         return getData(2);
+//     })
+//     .then((res) => {
+//         return getData(3);
+//     })
+//     .then((res) => {
+//         console.log(res);
+//     });
+
+//Async-await
+async function getAllData() {
+    await getData(1);
+    await getData(2);
+    await getData(3);
+    await getData(4);
+}
+console.log(getAllData());
+
+
+
 
 
